@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>National Animals of 11 Countries</title>
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Finger+Paint|Joti+One|Kranky|Ruslan+Display" rel="stylesheet">
+        <link rel="stylesheet" href="../css/stylesheet.css" type="text/css" />
+        <script type="text/javascript" src="../js/data.js"></script>
+        <script type="text/javascript" src="../js/flashcard.js"></script>
+    </head>
+    <body onload="document.getElementById('answerText').focus(); generateAnswerOptions();generateQuestion();">
+        <div id="header">
+            <p id="title">National Animals of Countries</p>
+            <div id="pageMsgBox">
+                <p id="pageMsg"></p>
+            </div>
+        </div>
+
+        <div id="questionWord">Question?</div>
+        <div id="questionBox"></div>
+
+        <div id="answerWord">Answer:</div>
+        <div id="answerMsg"><p>Touch the box below, select your answer, then press enter</p></div>
+        <div id="answerBox">
+            <!--<input type="text" name="answerText" id="answerText" onkeypress="checkEnter(event);">-->
+
+            <select id="answerText">
+                <option value="" selected>  </option>
+            </select>
+
+            <input type="button" value="Enter" id="answerButton" onclick="checkAnswer();">
+
+            <input type="button" value="Restart" id="restartButton" onclick="restart();">
+        </div>
+
+    </body>
+</html>

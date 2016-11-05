@@ -1,0 +1,158 @@
+*{
+    padding:0;
+    border:0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c72200+0,ff6600+50,ea2803+100,e86c57+100,f3c5bd+100 */
+    background: #c72200; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c72200 0%, #ff6600 50%, #ea2803 100%, #e86c57 100%, #f3c5bd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #c72200 0%,#ff6600 50%,#ea2803 100%,#e86c57 100%,#f3c5bd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #c72200 0%,#ff6600 50%,#ea2803 100%,#e86c57 100%,#f3c5bd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c72200', endColorstr='#f3c5bd',GradientType=0 ); /* IE6-9 */
+
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 5vh;
+}
+
+/*================= HEADER =============*/
+#header{
+    height: 14vh;
+    background: black;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 2s;
+}
+
+#title{
+    font-size: 12vh;
+    text-align: center;
+    text-shadow: 2px 2px yellow;
+}
+
+#pageMsgBox{
+    height:50%;
+    width: 80%;
+    position: relative;
+    top:35vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: hidden;
+}
+
+#pageMsg{
+    width: 100%;
+    position: relative;
+    font-size: 14vh;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-shadow: .25vh .25vh black ;
+}
+
+/*================= QUESTION =============*/
+#questionWord{
+    height:8vh;
+    color: yellow;
+    margin-left: 3vw;
+    font-size: 8vh;
+}
+
+#questionBox{
+    height:24vh;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0vh;
+    font-size: 5vh;
+}
+
+/*================= ANSWER =============*/
+#answerWord{
+    height: 8vh;
+    color: yellow;
+    margin-left: 3vw;
+    font-size: 8vh;
+}
+
+#answerMsg{
+    position: relative;
+    height: 10vh;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#answerMsg p{
+    color: #AAA;
+    font-size: 3.5vh;
+    text-align: center;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#answerBox{
+    height:15vh;
+    width: 33%;
+    margin: 0 auto;
+    padding-top: 1vh;
+}
+
+#answerText{ /*input[type=text]*/
+    width: 100%;
+    text-align-last: center;
+    background: black;
+    color: white;
+    font-family: 'Finger Paint', cursive;
+    font-size: 4vh;
+    border: .25vh solid white;
+}
+
+#answerText:focus{ /*input[type=text]:focus*/
+    border: .25vh solid white;
+    outline: none;
+}
+
+
+#answerButton{ /*input[type=button]*/
+    display: block;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
+    background: #627d4d; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #627d4d 0%, #1f3b08 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #627d4d 0%,#1f3b08 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #627d4d 0%,#1f3b08 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 6vh;
+    margin: 1.5vh auto 0;
+    border-radius: 1vh;
+}
+
+#answerButton:active{ /*input[type=button]:active*/
+     transform: translateY(.15vh);
+}
+
+#restartButton{ /*input[type=button]*/
+    display: block;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
+    background: black;
+    color: yellow;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 6vh;
+    margin: 3vh auto 0;
+    border-radius: 1vh;
+    padding: 0vh 1.5vh;
+}
+
+
+
